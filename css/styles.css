@@ -32,9 +32,11 @@ img { display: block; width: 100%; height: auto; }   /* sin huecos entre seccion
 .trigger img { transition: transform .5s ease; }
 .trigger:focus-visible { outline: 4px solid var(--focus); outline-offset: -4px; }
 
-/* Pastilla "Ver proyecto +" (centrada abajo, sobre el margen crema de las imágenes) */
+/* Pastilla "Ver proyecto +": centrada sobre el borde inferior de la tarjeta de cada imagen.
+   --cb = dónde termina la tarjeta (% del alto de la imagen). Súbelo/bájalo para mover la pastilla. */
+#b-nodo { --cb: 91.7%; } #b-carcel { --cb: 95.1%; } #b-magenta { --cb: 88.1%; } #b-jallalla { --cb: 88.9%; }
 .pill {
-  position: absolute; left: 50%; bottom: clamp(6px, 1.4vw, 22px); transform: translateX(-50%);
+  position: absolute; left: 50%; top: min(var(--cb, 92%), calc(100% - 22px)); transform: translate(-50%, -50%);
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 40px; padding: 0 1.1em; border-radius: 999px;
   background: rgba(20, 20, 24, .82); color: #fff;
