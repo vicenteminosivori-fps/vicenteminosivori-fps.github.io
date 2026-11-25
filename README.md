@@ -9,13 +9,14 @@ Sitio estático (HTML + CSS + JS puro). Sin build, sin dependencias.
 ├─ README.md
 ├─ css/styles.css
 ├─ js/main.js
-└─ img/01.webp … 12.webp   (una por página del PDF)
+└─ img/01.webp … 12.webp   (02–12 = páginas del PDF; 01 = solo vista previa al compartir)
+   img/hero-texto.webp · img/hero-arte.webp   (banner de inicio)
 ```
 
 ## Imágenes
 - Nombres exactos: `01.webp` a `12.webp`, en la carpeta `img/` (ya vienen incluidas).
 - Si prefieres `.jpg`: renombra los archivos y cambia `IMG_EXT = 'jpg'` al inicio de `js/main.js`.
-- Si cambias las imágenes por otras de distinta proporción (hoy 16:10, 1920×1200), actualiza `width`/`height` en `index.html`.
+- Si cambias las imágenes por otras de distinta proporción (hoy 16:9, 1920×1080), actualiza `width`/`height` en `index.html`.
 
 ## Publicar en GitHub Pages
 1. Crea un repositorio en github.com (ej. `portafolio`), público.
@@ -23,7 +24,6 @@ Sitio estático (HTML + CSS + JS puro). Sin build, sin dependencias.
 3. Ve a *Settings → Pages*. En *Build and deployment* elige *Deploy from a branch*, rama `main`, carpeta `/ (root)` y *Save*.
 4. Espera 1–2 minutos. Tu sitio quedará en `https://TU-USUARIO.github.io/portafolio/`.
    (Si el repositorio se llama `TU-USUARIO.github.io`, la URL será `https://TU-USUARIO.github.io/`.)
-5. En `index.html`, reemplaza en `og:image` `TU-USUARIO` y `TU-REPO` por los tuyos, para que se vea la vista previa al compartir el enlace.
 
 ## Ajustar las zonas de enlace
 En `css/styles.css`, al final, hay tres reglas con valores en % relativos a la imagen:

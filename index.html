@@ -8,12 +8,14 @@
   <meta name="theme-color" content="#FEFAED">
 
   <!-- Open Graph. IMPORTANTE: og:image debe ser una URL absoluta.
-       Reemplaza TU-USUARIO y TU-REPO por los tuyos (ver README). -->
+       Ya apunta a tu usuario de GitHub. -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CL">
   <meta property="og:title" content="Vicente Miño Sívori — Diseñador Gráfico | Portafolio">
   <meta property="og:description" content="Branding, packaging, señalética, UX/UI y social media.">
-  <meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/img/01.webp">
+  <meta property="og:image" content="https://vicenteminosivori-fps.github.io/img/01.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="css/styles.css">
@@ -26,18 +28,22 @@
     Si usas .jpg, cambia la constante IMG_EXT al inicio de js/main.js (un solo lugar).
   -->
 
-  <!-- 1. Banner principal -->
-  <header class="wrap">
+  <!-- 1. Banner principal: texto a la izquierda, anillo + tablet pegados al borde derecho de la pantalla -->
+  <header class="hero">
     <h1 class="sr-only">Vicente Pablo Miño Sívori — Diseñador Gráfico</h1>
-    <img src="img/01.webp" width="1920" height="1200" fetchpriority="high" decoding="async"
-         alt="Portafolio de Vicente Pablo Miño Sívori, Diseñador Gráfico">
+    <div class="hero__box">
+      <img class="hero__texto" src="img/hero-texto.webp" width="925" height="719" fetchpriority="high" decoding="async"
+           alt="Portafolio">
+    </div>
+    <img class="hero__arte" src="img/hero-arte.webp" width="1322" height="980" fetchpriority="high" decoding="async"
+         alt="Anillo y tablet con la presentación de Vicente Pablo Miño Sívori, Diseñador Gráfico">
   </header>
 
   <main class="wrap">
     <!-- 2. Currículum -->
     <section id="curriculum" class="hit-box">
       <h2 class="sr-only">Currículum</h2>
-      <img src="img/02.webp" width="1920" height="1200" loading="lazy" decoding="async"
+      <img src="img/02.webp" width="1920" height="1080" loading="lazy" decoding="async"
            alt="Currículum de Vicente Pablo Miño Sívori: educación, software, skills y experiencia en Magenta Electric, Agencia A1 y Armada de Chile">
       <!-- Zona de enlace invisible sobre el correo del CV. Ajusta top/left/width/height en css/styles.css (.hit--cv-mail) -->
       <a class="hit hit--cv-mail" href="mailto:vicenteminosivori2@gmail.com" aria-label="Enviar correo a vicenteminosivori2@gmail.com"></a>
@@ -47,13 +53,13 @@
     <section class="project" aria-labelledby="t-nodo">
       <h2 class="sr-only" id="t-nodo">Proyecto: Nodo Tr3s</h2>
       <button class="trigger" id="b-nodo" type="button" aria-expanded="false" aria-controls="p-nodo">
-        <img src="img/03.webp" width="1920" height="1200" loading="lazy" decoding="async"
+        <img src="img/03.webp" width="1920" height="1080" loading="lazy" decoding="async"
              alt="Nodo Tr3s, estudio gráfico: presentación de marca y papelería corporativa sobre un escritorio">
         <span class="pill" aria-hidden="true">Ver proyecto +</span>
       </button>
       <div class="panel" id="p-nodo" role="region" aria-labelledby="b-nodo">
         <div class="panel__inner">
-          <img src="img/04.webp" width="1920" height="1200" loading="lazy" decoding="async"
+          <img src="img/04.webp" width="1920" height="1080" loading="lazy" decoding="async"
                alt="Nodo Tr3s: manual de estilo fotográfico, sitio web, carpeta corporativa y brandbook">
         </div>
       </div>
@@ -63,15 +69,15 @@
     <section class="project" aria-labelledby="t-carcel">
       <h2 class="sr-only" id="t-carcel">Proyecto: Parque Cultural Ex-Cárcel</h2>
       <button class="trigger" id="b-carcel" type="button" aria-expanded="false" aria-controls="p-carcel">
-        <img src="img/05.webp" width="1920" height="1200" loading="lazy" decoding="async"
+        <img src="img/05.webp" width="1920" height="1080" loading="lazy" decoding="async"
              alt="Parque Cultural Ex-Cárcel: fachada con el logotipo y tótem direccional amarillo">
         <span class="pill" aria-hidden="true">Ver proyecto +</span>
       </button>
       <div class="panel" id="p-carcel" role="region" aria-labelledby="b-carcel">
         <div class="panel__inner">
-          <img src="img/06.webp" width="1920" height="1200" loading="lazy" decoding="async"
+          <img src="img/06.webp" width="1920" height="1080" loading="lazy" decoding="async"
                alt="Parque Cultural Ex-Cárcel: sistema iconográfico, manual de normas gráficas y proyecto de wayfinding">
-          <img src="img/07.webp" width="1920" height="1200" loading="lazy" decoding="async"
+          <img src="img/07.webp" width="1920" height="1080" loading="lazy" decoding="async"
                alt="Parque Cultural Ex-Cárcel: señalética instalada en los edificios de Difusión y Transmisión">
         </div>
       </div>
@@ -81,13 +87,13 @@
     <section class="project" aria-labelledby="t-magenta">
       <h2 class="sr-only" id="t-magenta">Proyecto: Magenta Electric</h2>
       <button class="trigger" id="b-magenta" type="button" aria-expanded="false" aria-controls="p-magenta">
-        <img src="img/08.webp" width="1920" height="1200" loading="lazy" decoding="async"
+        <img src="img/08.webp" width="1920" height="1080" loading="lazy" decoding="async"
              alt="Magenta Electric: identidad visual, iconografía corporativa y papelería para una marca de ingeniería eléctrica">
         <span class="pill" aria-hidden="true">Ver proyecto +</span>
       </button>
       <div class="panel" id="p-magenta" role="region" aria-labelledby="b-magenta">
         <div class="panel__inner">
-          <img src="img/09.webp" width="1920" height="1200" loading="lazy" decoding="async"
+          <img src="img/09.webp" width="1920" height="1080" loading="lazy" decoding="async"
                alt="Magenta Electric: manuales de normas gráficas y piezas de social media">
         </div>
       </div>
@@ -97,13 +103,13 @@
     <section class="project" aria-labelledby="t-jallalla">
       <h2 class="sr-only" id="t-jallalla">Proyecto: Cerveza Jallalla</h2>
       <button class="trigger" id="b-jallalla" type="button" aria-expanded="false" aria-controls="p-jallalla">
-        <img src="img/10.webp" width="1920" height="1200" loading="lazy" decoding="async"
+        <img src="img/10.webp" width="1920" height="1080" loading="lazy" decoding="async"
              alt="Cerveza Jallalla: presentación de marca con cinco botellas de cerveza artesanal en un paisaje de desierto">
         <span class="pill" aria-hidden="true">Ver proyecto +</span>
       </button>
       <div class="panel" id="p-jallalla" role="region" aria-labelledby="b-jallalla">
         <div class="panel__inner">
-          <img src="img/11.webp" width="1920" height="1200" loading="lazy" decoding="async"
+          <img src="img/11.webp" width="1920" height="1080" loading="lazy" decoding="async"
                alt="Cerveza Jallalla: packaging portabotellines, cerveza Mallku Stout e iconografía de personajes aymara">
         </div>
       </div>
@@ -113,7 +119,7 @@
   <!-- 7. Contacto -->
   <footer class="wrap hit-box" id="contacto">
     <h2 class="sr-only">Contacto</h2>
-    <img src="img/12.webp" width="1920" height="1200" loading="lazy" decoding="async"
+    <img src="img/12.webp" width="1920" height="1080" loading="lazy" decoding="async"
          alt="Contacto: vicenteminosivori2@gmail.com y behance.net/vicentemio, junto a su gata Chelita">
     <!-- Zonas de enlace invisibles. Ajusta top/left/width/height en css/styles.css (.hit--mail y .hit--behance) -->
     <a class="hit hit--mail" href="mailto:vicenteminosivori2@gmail.com" aria-label="Enviar correo a vicenteminosivori2@gmail.com"></a>
