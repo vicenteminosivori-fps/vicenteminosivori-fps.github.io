@@ -62,3 +62,13 @@ img { display: block; width: 100%; height: auto; }   /* sin huecos entre seccion
 .hit--mail     { --t: 57.0%; --l: 4.7%;  --w: 18.0%; --h: 3.4%; }
 /* Footer (img/12): Behance */
 .hit--behance  { --t: 60.3%; --l: 4.7%;  --w: 13.7%; --h: 3.4%; }
+/* ---------- Fondo continuo ---------- */
+body {
+  background: linear-gradient(to bottom,
+    #F5F1E4 0, #F5F1E4 min(117vw, 1880px),
+    #FEFAED min(125vw, 2000px), #FEFAED 100%);
+}
+#curriculum img {
+  -webkit-mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+}
