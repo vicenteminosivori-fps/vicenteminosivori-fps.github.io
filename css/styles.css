@@ -77,3 +77,6 @@ img { display: block; width: 100%; height: auto; }   /* sin huecos entre seccion
 .hit--mail     { --t: 51.5%; --l: 8.2%;  --w: 16.7%; --h: 3.5%; }
 /* Footer (img/12): Behance */
 .hit--behance  { --t: 55.0%; --l: 8.2%;  --w: 13.1%; --h: 3.7%; }
+
+/* Footer a todo el ancho: la gatita sale por el borde de la pantalla */
+footer, footer * { max-width: none; }
